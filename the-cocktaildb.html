@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cocktail DB</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        #spinner {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Input Field  -->
+    <h2 class="text-center text-success">Search Your Favourite Juice</h2>
+    <div class="input-group mx-auto w-50 mv-3">
+        <input id="search-input" type="text" class="form-control" placeholder="Search the juice you want" aria-label="Recipient's username with two button addons">
+        <button onclick="searchJuice()"  id="search-button" class="btn btn-outline-secondary" type="button">search</button>
+      </div>
+
+      <!-- Spinner adding  -->
+      <div id="spinner" class="text-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+      <!-- Single Juice Details  -->
+      <div id="single-juice-detail " class="w-50 mx-auto">
+          <div class="card">
+
+          </div>
+      </div>
+
+      <!-- Juice Search Result  -->
+      <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 my-3">
+        <div class="col">
+          
+        </div>
+      </div>
+
+    <!-- Javascript CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- External Javascript File  -->
+    <script src="the-cocktaildb.js"></script>
+</body>
+</html>
